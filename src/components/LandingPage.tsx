@@ -41,62 +41,75 @@ const LandingPage = () => {
     }
   };
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.nome || !formData.email || !formData.whatsapp || formData.whatsapp === '+55' || formData.whatsapp === '') {
-      toast({
-        title: "Erro",
-        description: "Por favor, preencha todos os campos obrigatórios.",
-        variant: "destructive"
-      });
-      return;
-    }
-    setIsSubmitting(true);
-    try {
-      const response = await fetch('https://n8nwebhook.arck1pro.shop/webhook/lp-rd', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
-      if (response.ok) {
-        // Dispara o evento de conversão do Facebook Pixel (CompleteRegistration)
-        if (typeof window !== 'undefined' && (window as any).fbq) {
-          (window as any).fbq('track', 'CompleteRegistration', {
-            content_name: 'Cadastro ARI',
-            status: 'completed'
-          });
-        }
-        toast({
-          title: "Sucesso!",
-          description: "Cadastro realizado com sucesso. Redirecionando..."
-        });
-        setFormData({
-          nome: '',
-          email: '',
-          whatsapp: '',
-          valor_investimento: ''
-        });
+  e.preventDefault();
+  if (!formData.nome || !formData.email || !formData.whatsapp || formData.whatsapp === '+55' || formData.whatsapp === '') {
+    toast({
+      title: "Erro",
+      description: "Por favor, preencha todos os campos obrigatórios.",
+      variant: "destructive"
+    });
+    return;
+  }
+  setIsSubmitting(true);
+  try {
+    // Primeiro webhook
+    const response1 = await fetch('https://n8nwebhook.arck1pro.shop/webhook/lp-rd', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
 
-        // Redireciona após 1 segundo (garantindo que o Pixel seja disparado)
-        setTimeout(() => {
-          window.location.href = "https://obrigado.arck1pro.com.br/";
-        }, 1000);
-      } else {
-        const errorText = await response.text();
-        throw new Error(`Erro ${response.status}: ${errorText}`);
+    // Segundo webhook (novo)
+    const response2 = await fetch('https://n8nwebhook.arck1pro.shop/webhook/lp-ari-rdstationcrm', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (response1.ok && response2.ok) {
+      // Dispara o evento de conversão do Facebook Pixel (CompleteRegistration)
+      if (typeof window !== 'undefined' && (window as any).fbq) {
+        (window as any).fbq('track', 'CompleteRegistration', {
+          content_name: 'Cadastro ARI',
+          status: 'completed'
+        });
       }
-    } catch (error) {
       toast({
-        title: "Erro",
-        description: `Ocorreu um erro ao enviar o cadastro: ${error.message}. Tente novamente.`,
-        variant: "destructive"
+        title: "Sucesso!",
+        description: "Cadastro realizado com sucesso. Redirecionando..."
       });
-    } finally {
-      setIsSubmitting(false);
+      setFormData({
+        nome: '',
+        email: '',
+        whatsapp: '',
+        valor_investimento: ''
+      });
+
+      // Redireciona após 1 segundo (garantindo que o Pixel seja disparado)
+      setTimeout(() => {
+        window.location.href = "https://obrigado.arck1pro.com.br/";
+      }, 1000);
+    } else {
+      const errorText1 = await response1.text();
+      const errorText2 = await response2.text();
+      throw new Error(`Erro no webhook 1: ${errorText1} | Erro no webhook 2: ${errorText2}`);
     }
-  };
+  } catch (error) {
+    toast({
+      title: "Erro",
+      description: `Ocorreu um erro ao enviar o cadastro: ${error.message}. Tente novamente.`,
+      variant: "destructive"
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
   const scrollToForm = () => {
     document.getElementById('register-form')?.scrollIntoView({
       behavior: 'smooth'
