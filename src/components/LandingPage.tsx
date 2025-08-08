@@ -508,13 +508,13 @@ Chega de ver seu dinheiro parado e perdendo valor para a inflação. Com os Ativ
                 
                 {/* Social Media Links for mobile */}
                 <div className="flex flex-col gap-3 w-full max-w-sm">
-                  <a href="https://www.instagram.com/fcsr.fabriciopavesi/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#400140] px-4 py-3 rounded-full hover:bg-[#000000] transition-colors">
+                  <a href="https://www.instagram.com/fabhricioari?igsh=YnR3emltYWpybmpi/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#400140] px-4 py-3 rounded-full hover:bg-[#000000] transition-colors">
                     <Instagram className="text-white w-4 h-4" />
-                    <span className="text-white text-sm font-medium">@fabriciopavesi</span>
+                    <span className="text-white text-sm font-medium">@fabhricioari</span>
                   </a>
                   <a href="https://br.linkedin.com/in/arquitetofcsr" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#400140] px-4 py-3 rounded-full hover:bg-[#000000] transition-colors">
                     <Linkedin className="text-white w-4 h-4" />
-                    <span className="text-white text-sm font-medium">@fabriciopavesi</span>
+                    <span className="text-white text-sm font-medium">@fabhricioari</span>
                   </a>
                   <a href="https://www.youtube.com/@arquitetofabriciopavesi" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#400140] px-4 py-3 rounded-full hover:bg-[#000000] transition-colors">
                     <Youtube className="text-white w-4 h-4" />
