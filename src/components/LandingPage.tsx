@@ -583,7 +583,7 @@ Chega de ver seu dinheiro parado e perdendo valor para a inflação. Com os Ativ
                   </a>
                   <a href="https://www.youtube.com/@arquitetofabriciopavesi" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#400140] px-4 py-3 rounded-full hover:bg-[#000000] transition-colors">
                     <Youtube className="text-white w-4 h-4" />
-                    <span className="text-white text-sm font-medium">@fabhricioari</span>
+                    <span className="text-white text-sm font-medium">@arquitetofabriciopavesi</span>
                   </a>
                 </div>
                 </div>
