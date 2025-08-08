@@ -495,7 +495,7 @@ Chega de ver seu dinheiro parado e perdendo valor para a inflação. Com os Ativ
       <section className="py-8 sm:py-12 lg:py-16 xl:py-20 px-4 sm:px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="section-title text-2xl sm:text-3xl lg:text-4xl text-center mb-8 sm:mb-12 lg:mb-16">
-            Quem organiza a Super Live A R I?
+            Quem apresenta a Super Live A R I?
           </h2>
           
           <div className="max-w-6xl mx-auto">
