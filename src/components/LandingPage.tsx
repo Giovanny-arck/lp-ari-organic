@@ -158,7 +158,7 @@ const LandingPage = () => {
               <div className="flex flex-col items-center lg:items-start gap-2 sm:gap-2">
                 <div className="flex items-center gap-1 sm:gap-2">
                   <span className="text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl">📅</span>
-                  <span className="font-medium text-sm sm:text-sm lg:text-base">27 e 28 de agosto</span>
+                  <span className="font-medium text-sm sm:text-sm lg:text-base"> 27 de agosto</span>
                 </div>
                 <div className="flex items-center gap-1 sm:gap-2">
                   <span className="text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl">🕒</span>
