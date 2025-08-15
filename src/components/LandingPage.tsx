@@ -139,7 +139,7 @@ const LandingPage = () => {
 
             {/* Main Title */}
             <h2 className="hero-title text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-left m-0">
-            Conquiste retornos de até 36% ao ano livre de imposto de renda, com investimentos em ARI - Ativos de Renda Imobiliária no litoral de Santa Catarina.
+            Conquiste retornos de até 3% ao mês livre de imposto de renda, com investimentos em ARI - Ativos de Renda Imobiliária no litoral de Santa Catarina.
           </h2>
 
             {/* Subtitle */}
@@ -259,7 +259,7 @@ Nosso foco é te mostrar como ter acesso aos melhores e mais promissores projeto
               </div>
               <div>
                 <h3 className="section-title text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Maximizando seus retornos com ARI</h3>
-                <p className="section-content sm:text-base text-justify text-base">Você saberá como alcançar até 36% de retorno ao ano nos seus investimentos em ARI, livre de Imposto de Renda. 
+                <p className="section-content sm:text-base text-justify text-base">Você saberá como alcançar até 3% de retorno ao mês nos seus investimentos em ARI, livre de Imposto de Renda. 
 Vamos te guiar na identificação de oportunidades lucrativas e na proteção do seu capital a longo prazo, visando sua segurança financeira. 
 Chega de ver seu dinheiro parado e perdendo valor para a inflação. Com os Ativos de Renda Imobiliária, seu capital trabalhará para você!</p>
               </div>
@@ -378,7 +378,7 @@ Chega de ver seu dinheiro parado e perdendo valor para a inflação. Com os Ativ
             <Percent className="text-white w-8 h-8 sm:w-10 sm:h-10" />
           </div>
           <h3 className="section-title text-base sm:text-lg font-semibold px-2">Rentabilidade excepcional e proteção financeira</h3>
-          <p className="section-content sm:text-sm text-justify text-base">Imagine alcançar até 36% de rentabilidade ao ano, livre de imposto de renda! Com os ARI, essa é uma realidade tangível. Seu dinheiro não fica parado; ele trabalha para você, superando a inflação e garantindo um crescimento exponencial do seu patrimônio. Essa performance é um diferencial que posiciona os ARI como uma escolha inteligente para quem busca maximizar ganhos.</p>
+          <p className="section-content sm:text-sm text-justify text-base">Imagine alcançar até 3% de rentabilidade ao mês, livre de imposto de renda! Com os ARI, essa é uma realidade tangível. Seu dinheiro não fica parado; ele trabalha para você, superando a inflação e garantindo um crescimento exponencial do seu patrimônio. Essa performance é um diferencial que posiciona os ARI como uma escolha inteligente para quem busca maximizar ganhos.</p>
         </div>
         
         <div className="text-center space-y-3 sm:space-y-4 md:col-span-2 xl:col-span-1">
@@ -672,7 +672,7 @@ Chega de ver seu dinheiro parado e perdendo valor para a inflação. Com os Ativ
             </p>
             
             <p className="section-content sm:text-lg leading-relaxed text-base text-justify">
-              Nosso objetivo é capacitar você, investidor, a compreender as oportunidades reais e os segredos para multiplicar seu patrimônio de forma acessível e segura, com aportes a partir de R$ 50 mil, podendo alcançar até 36% de retorno ao ano.
+              Nosso objetivo é capacitar você, investidor, a compreender as oportunidades reais e os segredos para multiplicar seu patrimônio de forma acessível e segura, com aportes a partir de R$ 50 mil, com retorno de 3% ao mês.
             </p>
             
             <p className="section-content sm:text-lg leading-relaxed text-base text-justify">
