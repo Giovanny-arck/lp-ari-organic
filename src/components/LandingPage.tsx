@@ -672,7 +672,7 @@ Chega de ver seu dinheiro parado e perdendo valor para a inflação. Com os Ativ
             </p>
             
             <p className="section-content sm:text-lg leading-relaxed text-base text-justify">
-              Nosso objetivo é capacitar você, investidor, a compreender as oportunidades reais e os segredos para multiplicar seu patrimônio de forma acessível e segura, com aportes a partir de R$ 50 mil, com retorno de 3% ao mês.
+              Nosso objetivo é capacitar você, investidor, a compreender as oportunidades reais e os segredos para multiplicar seu patrimônio de forma acessível e segura, com aportes a partir de R$ 50 mil, com retorno de até 3% ao mês.
             </p>
             
             <p className="section-content sm:text-lg leading-relaxed text-base text-justify">
